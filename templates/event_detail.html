@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section class="fslider">
+  <div class="slider">
+    <ul class="slides">
+      <li>
+       <img src="{% static 'images/common-banner.jpg' %}" alt="">
+       <div class="caption center-align white-text">
+         <h3>ChinemeCare</h3>
+       </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<section id="gallery" class="section section-gallery scrollspy">
+ 
+    <h4 class="center">
+      <span class="red-text">photo</span> Gallery
+    </h4>
+    <div class="row" style="padding-left: 50px; padding-right: 50px; padding-top: 50px;">
+      <div class="col s12 m3" style="padding: 10px 5px">
+        <img src="{{ post.uploa.url }}" alt="" class="materialboxed responsive-img">
+      </div>
+      <div class="col s12 m3" style="padding: 10px 5px">
+       <img src="{{ post.uplod.url }}" alt="" class="materialboxed responsive-img">
+     </div>
+     <div class="col s12 m3" style="padding: 10px 5px">
+       <img src="{{ post.uplad.url }}" alt="" class="materialboxed responsive-img">
+     </div>
+     <div class="col s12 m3" style="padding: 10px 5px">
+       <img src="{{ post.uplodd.url }}" alt="" class="materialboxed responsive-img">
+     </div>
+    </div>
+
+    <div class="row" style="padding-left: 50px; padding-right: 50px; padding-top: 0px; ">
+     <div class="col s12 m3" style="padding: 10px 5px">
+       <img src="{{ post.uload.url }}" alt="" class="materialboxed responsive-img">
+     </div>
+     <div class="col s12 m3" style="padding: 10px 5px">
+      <img src="{{ post.pload.url }}" alt="" class="materialboxed responsive-img">
+    </div>
+    <div class="col s12 m3" style="padding: 10px 5px">
+      <img src="{{ post.uploa.url }}" alt="" class="materialboxed responsive-img">
+    </div>
+    <div class="col s12 m3" style="padding: 10px 5px">
+      <img src="{{ post.upoad.url }}" alt="" class="materialboxed responsive-img">
+    </div>
+   </div>
+  
+   <div class="row" style="padding-left: 50px; padding-right: 50px; padding-top: 0px; ">
+     <div class="col s12 m3" style="padding: 10px 5px">
+       <img src="{{ post.uplo.url }}" alt="" class="materialboxed responsive-img">
+     </div>
+     <div class="col s12 m3" style="padding: 10px 5px">
+      <img src="{{ post.upad.url }}" alt="" class="materialboxed responsive-img">
+    </div>
+    <div class="col s12 m3" style="padding: 10px 5px">
+      <img src="{{ post.upld.url }}" alt="" class="materialboxed responsive-img">
+    </div>
+    <div class="col s12 m3" style="padding: 10px 5px">
+      <img src="{{ post.uoad.url }}" alt="" class="materialboxed responsive-img">
+    </div>
+   </div>
+
+   <div class="row" style="padding-left: 50px; padding-right: 50px; padding-top: 0px; ">
+     <div class="col s12 m3" style="padding: 10px 5px">
+       <img src="{{ post.upla.url }}" alt="" class="materialboxed responsive-img">
+     </div>
+     <div class="col s12 m3" style="padding: 10px 5px">
+      <img src="{{ post.uplb.url }}" alt="" class="materialboxed responsive-img">
+    </div>
+    <div class="col s12 m3" style="padding: 10px 5px">
+      <img src="{{ post.uoed.url }}" alt="" class="materialboxed responsive-img">
+    </div>
+    <div class="col s12 m3" style="padding: 10px 5px">
+      <img src="{{ post.upac.url }}" alt="" class="materialboxed responsive-img">
+    </div>
+   </div>
+</section>
+{% endblock %}

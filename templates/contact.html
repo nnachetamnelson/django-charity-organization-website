@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section class="fslider">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+         <img src="{% static 'images/common-banner.jpg' %}" alt="">
+         <div class="caption center-align white-text">
+           <h3>ChinemeCare</h3>
+         </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+{% endblock %}

@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+ <section class="fslider">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+         <img src="{% static 'images/3.jpg' %}" alt="">
+         <div class="caption center-align white-text">
+           <h3>ChinemeCare</h3>
+         </div>
+        </li>
+        <li>
+          <img src="{% static 'images/4.jpg' %}" alt="">
+          <div class="caption center-align crimson-text">
+            <div class="col-12 col-lg-8 col-xl-6">
+            <h3>ChinemeCare</h3>
+            </div>
+          </div>
+         </li>
+      </ul>
+    </div>
+  </section>
+    <div class="container">
+      <section class="descrip">
+          <div class="section white center">
+              <h2 class="header"><b><span style="color: crimson;">Who</span> Are We</b></h2>
+              <!---<div class="row container center" >-->
+                  <div class="row" >
+                  <div class="col center s12" style="padding-left: 50px; padding-right: 50px; padding-bottom: 15px;">
+                      <h6 style="color: #ff573d;">Chineme Care Foundation, Inc. is a Nigeria based Non Profit Organization, founded by Vitalis Okechukwu, MD</h6>
+                      The main idea behind the formation is to benefit the indigents in the communities of Nigeria.<br>
+                      The Foundation's focus is large on the less privileged of rural communities, especially the elderly,<br>
+                      children and widows, providing them with FREE Health Care and related necessities
+                  </div>
+                  <div style="padding-left: 50px; padding-right: 50px; padding-top: 50px; ">
+                    <a href="about" id="download-button" class="btn-large waves-effect waves-light red lighten-1">Get Started</a>
+                  </div>
+                 </div>
+  
+          </div>
+      </section>
+    </div>
+  
+    <div class="container">
+      <div class="section">
+        <div class="row center">
+                  <div class="col-lg-6">
+                      <div class="section-title">
+                          <h3><b>How <span style="color: crimson;">Could</span> You Help</b></h3>
+                      </div>
+                  </div>
+              </div>
+      </div>
+    </div>
+
+      <!--   Icon Section   -->
+
+      <section class="section section-icon gray lighten-4 center">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="card-panel">
+                <i class="material-icons large red-text">attach_money</i>
+                <h4>Give Donation</h4>
+                <p>The measure of life is not its duration and giving for the sake of making a donation. 
+                  It is about making a difference through donation.</p>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card-panel">
+                <i class="material-icons large red-text">cloud_done</i>
+                <h4>Give Inspiration</h4>
+                <p>Give strength to someone,<br> you should understand<br> the difference that positive inspiration can make <br>in a person's life</p>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card-panel">
+                <i class="material-icons large red-text">assistant</i>
+                <h4>Volunteer</h4>
+                <p>What are you passionate about? Making a difference in the lives of others?
+                   If your answer is yes to any of the above then you can join forces with us to serve one humanity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    <div class="parallax-container valign-wrapper">
+        <div class="container">
+          <div class="row center">
+              <h5 style="color: crimson;"><b>Need your help?</b></h5>
+                <h1>Donate to Us</h1>
+            <h5 class="header col s12 light">Make a difference through donation</h5>  
+            <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light red lighten-1">Donate</a>
+          </div>
+        </div>
+      <div class="parallax"><img src="{% static 'images/ct1.jpg' %}" alt="Unsplashed background img 3"></div>
+    </div>
+  
+      <section class="fcards">
+        <div class="feature-item">
+          <div class="container">
+            <div class="section">
+              <div class="row center">
+                        <div class="col-lg-6">
+                            <div class="section-title">
+                                <h3><b><span style="color: crimson;">Popular</span> Events</b></h3>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+          </div>
+          <div class="row" style="padding-left: 50px; padding-right: 50px; padding-top: 50px; " >
+            {% for obj in object_list %}
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{{ obj.thumbnail.url }}" alt="">
+                </div>
+                <div class="card-content">
+                  <a href="{{ obj.get_absolute_url }}">
+                    <span class="black-text">
+                      {{ obj.title }}
+                  </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          </div>
+      </section>
+  
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+          
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="{% static 'images/11.jpg' %}" alt="Unsplashed background img 2"></div>
+    </div>
+    {% endblock %}

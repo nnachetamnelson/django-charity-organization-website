@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section class="fslider">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+         <img src="{% static 'images/common-banner.jpg' %}" alt="">
+         <div class="caption center-align white-text">
+           <h3>ChinemeCare</h3>
+         </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+<div class="container">
+    <section class="descrip">
+        <div class="section white center">
+            <h2 class="header"><b><span style="color: crimson;">Who</span> Are We</b></h2>
+            <!---<div class="row container center" >-->
+                <div class="row" >
+                <div class="col center s12" style="padding-left: 50px; padding-right: 50px; padding-bottom: 15px;">
+                    <h6 style="color: #ff573d;">Chineme Care Foundation, Inc. is a Nigeria based Non Profit Organization, founded by Vitalis Okechukwu, MD</h6>
+                    The main idea behind the formation is to benefit the indigents in the communities of Nigeria.<br>
+                    The Foundation's focus is large on the less privileged of rural communities, especially the elderly,<br>
+                    children and widows, providing them with FREE Health Care and related necessities
+                    <p>
+                        Chineme Foundation, Inc. with its humanitarian outreach extends to other areas of socio-economic growth of the less advantaged 
+                        in diverse commuinties with the goal to operate with subsidiaries that cater to the many different humanitarian outreaches,
+                         such as education; feeding the poor; and community advancement. Based on the strong belief, that Health is Wealth, the team, 
+                         under the Founder, Dr. Vitalis Okechukwu, is working hard with hope to continue to make a difference with giant
+                          strides in the sectors listed above. The Foundation is structured to expand in the areas of focus with
+                           the ever-changing needs and conditions of the downtrodden. This is a response to the call to Serve Humanity.
+                    </p>
+                </div>
+               </div>
+        </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row center">
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <h3><b>How <span style="color: crimson;">Could</span> You Help</b></h3>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+
+    <!--   Icon Section   -->
+
+    <section class="section section-icon gray lighten-4 center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <i class="material-icons large red-text">attach_money</i>
+              <h4>Give Donation</h4>
+              <p>The measure of life is not its duration and giving for the sake of making a donation. 
+                It is about making a difference through donation.</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <i class="material-icons large red-text">cloud_done</i>
+              <h4>Give Inspiration</h4>
+              <p>Give strength to someone,<br> you should understand<br> the difference that positive inspiration can make <br>in a person's life</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <i class="material-icons large red-text">assistant</i>
+              <h4>Volunteer</h4>
+              <p>What are you passionate about? Making a difference in the lives of others?
+                 If your answer is yes to any of the above then you can join forces with us to serve one humanity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

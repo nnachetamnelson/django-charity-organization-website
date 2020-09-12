@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section class="fslider">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+         <img src="{% static 'images/common-banner.jpg' %}" alt="">
+         <div class="caption center-align white-text">
+           <h3>ChinemeCare</h3>
+         </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="fcards">
+    <div class="feature-item">
+      <div class="container">
+        <div class="section">
+          <div class="row center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h3><b><span style="color: crimson;">Popular</span> Events</b></h3>
+                        </div>
+                    </div>
+                </div>
+        </div>
+      </div>
+      <div class="row" style="padding-left: 50px; padding-right: 50px; padding-top: 50px; " >
+        {% for post in queryset %}
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="{{ post.thumbnail.url }}" alt="">
+            </div>
+            <div class="card-content">
+              <a href="{{ post.get_absolute_url }}">
+                <span class="black-text">
+                  {{ post.title }}
+              </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      </div>
+  </section>
+
+{% endblock %}

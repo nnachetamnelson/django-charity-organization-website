@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section class="fslider">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+         <img src="{% static 'images/common-banner.jpg' %}" alt="">
+         <div class="caption center-align white-text">
+           <h3>ChinemeCare</h3>
+         </div>
+        </li>
+      </ul>
+    </div>
+ </section> 
+
+<div class="row">
+				
+    <div class="content">
+    <p> 
+    You can donate by:
+</p><ol>
+    <li>Credit card</li>
+    <li>Check</li>
+                
+</ol>
+    
+    Or you can donate supplies. <br>
+    To reach us please call 1-833-244-6363.
+    
+    <p></p>
+    
+    <p>Chineme Foundation, Inc. is a Nigeria based
+      Non Profit Organization, founded by Vitalis Okechukwu, MD that
+      serves  the people of Nigeria regardless
+      of tribe, political, creed or religious affiliation. <br>
+      The Foundation's
+      focus is large on the less privileged of rural communities,
+      especially the elderly, children and widows, providing them
+      with FREE Health Care and related necessities.</p>
+    
+</div><!-- end of "content" -->
+</div>
+
+{% endblock %}
